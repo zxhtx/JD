@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+
+    }
+    .clear::after{
+        content: "";
+        clear: both;
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+    .banner{
+        width: 100%;
+        min-width: 320px;
+        max-width:700px;
+        position: relative;
+         overflow: hidden;
+    }
+    .banner ul{
+        width: 800%;
+        /*transform: translateX(-12.5%);*/
+    }
+    .banner ul li{
+        list-style-type: none;
+        float: left;
+        width: 12.5%;
+
+    }
+    .banner ul li img{
+        width: 100%;
+    }
+    .banner div{
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        text-align: center;
+        width: 100%;
+
+    }
+    .banner div span{
+
+        /*bottom: 5px;*/
+        width: 5px;
+        height: 5px;
+        background: white;
+        border: 1px solid lightgray;
+        display: inline-block;
+        border-radius: 50%;
+    }
+
+    /*分类*/
+    .categoary{
+        min-width: 320px;
+        max-width:700px;
+    }
+    .categoary ul{
+        /*width: 100%;*/
+        margin: 0 auto;
+    }
+    .categoary ul li{
+        margin: 10px 0;
+    float: left;
+        width: 25%;
+        list-style-type: none;
+    }
+    .categoary ul li a img{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    .categoary ul li a{
+    text-decoration: none;
+        text-align: center;
+        display: block;
+    }
+    .header{
+        height: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #D8505C;
+        display: flex;
+    }
+    .banner .header .logo{
+        position: absolute;
+        left:0;
+        margin: 0 2px;
+        padding-top:5px;
+        /*display: inline-block;*/
+        width: 62px;
+        height: 35px;
+        background: url(images/sprites.png) 2px -105px/210px 210px no-repeat;
+        background-clip: content-box;
+
+    }
+    .header form{
+    flex-grow: 1;
+        /*border: 1px solid red;*/
+    }
+    .header form input{
+        margin: 2px 0 0 20px;
+        width: 66%;
+
+        height: 32px;
+        border-radius: 16px;
+        padding-left:25px;
+        border:none;
+    }
+    .header .login{
+        width: 46px;
+        height: 39px;
+        text-align: center;
+        line-height: 40px;
+        color: white;
+        /*border:1px solid red;*/
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+
+
+</style>
+<body>
+
+<div class="banner">
+    <!--轮播图-->
+    <div class="header">
+        <a class="logo"></a>
+        <form action="">
+            <input type="search" placeholder="你好,华为">
+            <i class="search-icon"></i>
+        </form>
+        <a class="login">登录</a>
+    </div>
+    <ul class="clear">
+        <li><a href=""><img src="images/l1.jpg" alt=""></a></li>
+        <li><a href=""><img src="images/l2.jpg" alt=""></a></li>
+        <li><a href=""><img src="images/l3.jpg" alt=""></a></li>
+        <li><a href=""><img src="images/l4.jpg" alt=""></a></li>
+        <li><a href=""><img src="images/l5.jpg" alt=""></a></li>
+        <li><a href=""><img src="images/l6.jpg" alt=""></a></li>
+        <li><a href=""><img src="images/l7.jpg" alt=""></a></li>
+        <li><a href=""><img src="images/l8.jpg" alt=""></a></li>
+    </ul>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!--分类-->
+<div class="categoary">
+    <ul class="clear">
+        <li><a href=""><img src="images/nav0.png" alt=""><span>分类8</span></a></li>
+        <li><a href=""><img src="images/nav1.png" alt=""><span>分类1</span></a></li>
+        <li><a href=""><img src="images/nav2.png" alt=""><span>分类2</span></a></li>
+        <li><a href=""><img src="images/nav3.png" alt=""><span>分类3</span></a></li>
+        <li><a href=""><img src="images/nav4.png" alt=""><span>分类4</span></a></li>
+        <li><a href=""><img src="images/nav5.png" alt=""><span>分类5</span></a></li>
+        <li><a href=""><img src="images/nav6.png" alt=""><span>分类6</span></a></li>
+        <li><a href=""><img src="images/nav7.png" alt=""><span>分类7</span></a></li>
+    </ul>
+</div>
+</body>
+</html>
